@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Rasoi | Fine Dining</title>
+</head>
+<body>
+  <!-- Header & Navigation -->
+    <header>
+        <div class="header">
+            <div class="logo">Rasoi</div>
+            <nav>
+                <!-- Menu toogle -->
+                 <input type="checkbox" id="check">
+                 <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+                
+                <!-- Navigation -->
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <button class="btn1">Book Now</button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <!-- Section -->
+     <section class="hero">
+        <div class="hero-content">
+           <h1>Rasoi</h1>
+           <p>We don’t just cook — we create.<br>
+             Each meal is prepared with love, just like home.</p>
+        </div>
+     </section>
+     <div class="text">Featured Dishes</div>
+     <!-- Featured Dishes -->
+      <section class="featured">
+        <div class="container">
+            <!-- Grids of all dishes -->
+            <div class="dishes-grids">
+                <!-- Dish 1 -->
+                 <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1680993032090-1ef7ea9b51e5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="food">
+                    </div>
+                    <div class="dish-info">
+                        <h1>Thali – Pure Ghar Ka Swad!</h1>
+                        <p>Enjoy the rich flavors of North India with fluffy rotis, creamy dal, spicy sabzi, fragrant rice, and a sweet finish—all in one hearty thali</p>
+                        <p class="price">Price = <i class="fa-solid fa-indian-rupee-sign"></i>300/-</p>
+                        <div class="buy">
+                            <button class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>Add to cart
+                            </button>
+                            <button class="buy-btn">
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                 </div>
+                 <!-- Dish 2 -->
+                 <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://cdn.pixabay.com/photo/2018/12/04/16/49/korma-3856046_1280.jpg" alt="food">
+                    </div>
+                    <div class="dish-info">
+                        <h1>"Paneer Korma"</h1>
+                        <p> Where Creaminess Meets Spice! A perfect blend of rich gravy and tender paneer, delivering an unforgettable burst of flavor.</p>
+                        <p class="price">Price =  <i class="fa-solid fa-indian-rupee-sign"></i>120/-</p>
+                        <div class="buy">
+                            <button class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>Add to cart 
+                            </button>
+                            <button class="buy-btn">
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                 </div>
+                 <!-- Dish 3 -->
+                 <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://cdn.pixabay.com/photo/2015/06/23/05/23/fresh-jalebi-818316_1280.jpg" alt="food">
+                    </div>
+                    <div class="dish-info">
+                        <h1>Jalebi</h1>
+                        <p>Jalebi isn’t just a sweet—it's a swirl of tradition, taste, and temptation that draws customers in with its golden glow and sugary aroma</p>
+                        <p class="price">Price = <i class="fa-solid fa-indian-rupee-sign"></i> 100/-</p>
+                        <div class="buy">
+                            <button class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>Add to  cart
+                            </button>
+                            <button class="buy-btn">Buy</button>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- testimonial -->
+      <section class="testinomial">
+        <div class="customer-say">
+            <h1>What Our Guests Says</h1>
+            <div class="say">
+                <div class="star">★★★★★</div>
+                <p class="testinomial-text">
+                    "The tasting menu was an unforgettable experience. Every dish was a masterpiece!"
+                </p>
+                <p class="testinomial-author">
+                    ~ Sarah Pandey
+                </p>
+            </div>
+        </div>
+      </section>
+      <!-- Reservation-Table -->
+       <div class="reservation-tbl">
+        <div class="reservation">
+            <h2>Experience an Evening to Remember</h2>
+            <p>"Book your table today and indulge in our culinary journey"</p>
+            <button>Book Now</button>
+        </div>
+       </div>
+       <div class="feedback">
+        <h1>Feedback Form</h1>
+        <p>Your feedback is valueable for us!</p>
+
+        <form action="_main">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" class="name" placeholder="Your Name" required>
+            
+            <!-- Email -->
+            <label for="email">Your Email:</label>
+            <input type="email" class="email" placeholder="Enter Your Email">
+
+            <!-- satisfaction -->
+            <label for="satisfaction">How satisfied are you with our food</label>
+            <select name="satisfaction" id="satisfaction">
+                <option value="">--Select--</option>
+                <option value="">Very satisfied</option>
+                <option value="">Satisfied</option>
+                <option value="">Neutral</option>
+                <option value="">Dissatisfied</option>
+                <option value="">Very Dissatisfied</option>
+            </select>
+
+            <!-- Feedback -->
+            <label for="response">Feedback</label>
+            <textarea name="Response" id="response" placeholder="Your Response here...."></textarea>
+
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+        </form>
+       </div>
+    </main>  
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-coloumn">
+                <h2>Rasoi</h2>
+                <p>Where culinary art meets tradition in an intimate setting</p>
+            </div>
+
+        </div>
+    </footer> 
+</body>
+</html>
