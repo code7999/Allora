@@ -227,6 +227,10 @@ header{
   color: #b31616;
 }
 
+.fa-indian-rupee-sign{
+  font-size: large;
+}
+
 .buy{
   display: flex;
   justify-content: space-evenly;
@@ -404,4 +408,67 @@ form button{
 form button:hover{
   transform: scale(1.1);
   border: 1px solid white;
+}
+
+footer{
+  padding: 70px 10px;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  background-color: #5e0118;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(201, 197, 197);
+}
+
+.footer-content{
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.footer-coloumn{
+  height: 194px;
+  width: 250px;
+  overflow: hidden;
+  padding: 0px 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.footer-coloumn h2{
+  font-family: 'tangerine' , cursive;
+  font-size: xxx-large;
+  font-weight: 900;
+  color: white;
+}
+
+.footer-coloumn h3{
+  font-size: x-large;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.social{
+  display: flex;
+  gap: 60px;
+}
+
+.social a{
+  text-decoration: none;
+  color: #b9b5b5;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 80px;
+  transition: all 0.2s ease;
+}
+
+.social a:hover{
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 4px rgb(90, 76, 76);
 }
