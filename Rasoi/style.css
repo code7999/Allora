@@ -4,10 +4,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
-body{
+html, body{
   background-color: black;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow:auto;
 }
 
 header{
@@ -109,6 +114,7 @@ header{
     transition: all 0.3s linear;
   }
   .btn1{
+    margin-top: 10px;
     width: 85%;
   }
 }
@@ -168,10 +174,17 @@ header{
   color: #b31616;
 }
 
+.main{
+  width: 100%;
+  height: max-content;
+  text-align: center;
+}
+
 .container{
+  margin: 0 auto;
   height: fit-content;
   width: 100%;
-  padding: 10px;
+  padding: 10px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -260,6 +273,7 @@ header{
 
 .testinomial{
   padding: 40px 0px;
+  width: 100%;
   background-color: rgb(32, 48, 32);
 }
 
@@ -293,6 +307,7 @@ header{
 }
 
 .reservation-tbl{
+  width: 110%;
   color: #f3ebeb;
   padding: 80px 0px;
   text-align: center;
@@ -331,6 +346,7 @@ header{
 }
 
 .feedback{
+  width: 100%;
   background-color: black;
   color: white;
   padding: 80px 10px;
@@ -349,12 +365,13 @@ header{
 .feedback p{
   font-size: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 
 form{
   width: 400px;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -411,7 +428,7 @@ form button:hover{
 }
 
 footer{
-  padding: 70px 10px;
+  padding: 70px 0px;
   height: max-content;
   width: 100%;
   display: flex;
@@ -461,6 +478,7 @@ footer{
 .social{
   display: flex;
   gap: 60px;
+  text-align: center;
 }
 
 .social a{
@@ -468,11 +486,10 @@ footer{
   color: #b9b5b5;
   text-align: center;
   font-size: 30px;
-  border-radius: 80px;
+  border-radius: 50px;
   transition: all 0.2s ease;
 }
 
 .social a:hover{
   transform: scale(1.2);
-  box-shadow: 0px 0px 10px 4px rgb(90, 76, 76);
 }
