@@ -454,6 +454,10 @@ footer{
   margin-bottom: 15px;
 }
 
+.footer-coloumn li{
+  list-style: none;
+}
+
 .social{
   display: flex;
   gap: 60px;
