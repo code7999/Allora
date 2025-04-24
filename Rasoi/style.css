@@ -370,7 +370,7 @@ header{
 
 
 form{
-  width: 400px;
+  width: 352px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -448,7 +448,7 @@ footer{
 
 .footer-coloumn{
   height: 194px;
-  width: 250px;
+  width: 300px;
   overflow: hidden;
   padding: 0px 10px;
   margin-bottom: 20px;
