@@ -1,162 +1,292 @@
 *{
-  margin: 0%;
+  margin: 0;
   padding: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   box-sizing: border-box;
 }
 
-body{
-  background-color: #232729;
+html, body{
+  padding: 0;
+  overflow-x: hidden;
+  background: url('https://cdn.pixabay.com/photo/2016/11/29/08/58/astronomy-1868560_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -100;
+}
+
+header{
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(30px);
 }
 
 nav{
-  height: max-content;
-  width: 100%;
-  padding: 10px;
+  padding: 20px 15px;
+}
+
+.head{
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  background: rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 10px 4px black; 
-  color: #817f79;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  align-items: center;
 }
 
 .logo{
-  font-size: xx-large;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Lucida Sans';
+  color: rgb(226, 222, 218);
+}
+
+#check{
+  float: right;
+  display: none;
+}
+
+.checkbtn{
+  font-size: 27px;
+  display: none;
+  cursor: pointer;
 }
 
 .navbar{
-  height: max-content;
-  width: 50%;
-  color: #817f79;
-  display: flex; flex-direction: row;
-  align-items: center; justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
-.navbar a{
+.navbar li{
+  list-style: none;
+}
+
+.navbar li a{
   text-decoration: none;
-  color: #817f79;
+  color: rgb(255, 254, 254);
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 600;
 }
 
-@media (max-width:550px){
-  .navbar{
-    display: none;
+.navbar li a:hover{
+  border-bottom: 2px solid rgb(204, 203, 202);
+}
+
+.btn1{
+  padding: 10px 15px;
+  border: 0.1px solid gray;
+  outline: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  background: rgb(56, 38, 77);
+  transition: all 0.3s linear;
+}
+
+.btn1:hover{
+  transform: scale(1.1);
+  border: 1px solid rgb(14, 12, 12);
+  box-shadow: 0px 0px 15px 4px rgb(73, 72, 71);
+}
+
+@media (max-width:600px){
+  .checkbtn{
+    display: block;
+    color: rgb(209, 206, 203);
   }
 
+  .navbar{
+    display: block;
+    position: absolute;
+    top: 70px;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    right: -100%;
+    background: rgb(23, 5, 37);
+    backdrop-filter: blur(90px);
+    transition: all 0.5s ease;
+  }
+
+  .navbar li{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  .btn1{
+    padding: 15px 0px;
+    width: 50%;
+  }
+
+  #check:checked ~ .navbar{
+    right: 0;
+  }
 }
 
-.full{
-  height: 100%;
+main{
+  height: 100vh;
   width: 100%;
+  position: relative;
+  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(40%);
 }
 
-.login-page{
-  height: 400px;
-  width: 450px;
-  color: #C1BDB3;
-  background-color: rgba(0, 0, 0, 0.5);
+section{
+  padding: 30px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 50px 20px black;
-}
-
-@media (max-width:550px){
-  .login-page{
-    height: 350px;
-    width: 350px;
-  }
-}
-
-.text{
-  font-family: Georgia ;
-  height: fit-content;
-  width: fit-content;
-  font-size: xx-large;
-}
-
-.option{
-  padding: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
   gap: 20px;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.9);
 }
 
-.option a{
-  height: 30px;
-  width: 30px;
-  color: #C1BDB3;
+section h2{
+  font-size: 33px;
+  font-weight: 200;
+  color: rgb(209, 206, 203);
+}
+
+.social{
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
-  padding-top: 5px;
-  border: 1px solid black;
-  border-radius: 50%;
 }
 
-.option a:hover{
-  animation: bounce 1s;
+.social a{
+  font-size: 30px;
+  text-align: center;
+  transition: all 0.3s linear;
+  border: none;
+  border-radius: 90px;
 }
 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-  }
-  40% {
-      transform: translateY(-10px);
-  }
-  60% {
-      transform: translateY(-5px);
-  }
+.social a:hover{
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 3px gray;
+  background-color: rgb(105, 99, 99);
+}
+
+.fa-google{
+  color: rgb(209, 206, 203);
+}
+
+.fa-linkedin{
+  color: rgba(54, 57, 179, 0.979);
+}
+
+.fa-github{
+  color: black;
+  color: rgb(209, 206, 203);
+  border-radius: 15px;
 }
 
 form{
-  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 15px;
+  padding: 10px;
+  color: white;
 }
 
 input{
-  padding: 10px 20px;
-  border: 1px solid white;
-  border-right: none;
-  color: aliceblue;
-  letter-spacing: 0.3px;
-  border-top: none;
-  background-color: #3D3B3C;
+  padding: 9px 9px;
   outline: none;
+  color: rgb(209, 206, 203);
+  background: transparent;
+  backdrop-filter: blur(90px);
+  border: none;
+  border-left: 1px solid rgb(112, 111, 111);
+  border-bottom: 1px solid rgb(112, 111, 111);
+  margin-bottom: 10px;
 }
 
-button:hover {
-  border-color: #ff9900;
-  box-shadow: 0 0 5px rgba(255, 153, 0, 0.6);
-  transition: all 0.3s ease;
+input:hover{
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: all 0.2s linear;
 }
 
+input:focus{
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
 
-.forget{
+.name{
+  display: flex;
+  gap: 10px;
+}
+
+span{
+  width: 95%;
+  display: block;
+  margin-bottom: 10px;
+  color: rgb(209, 206, 203);
+
+}
+
+.submit{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.btn2{
+  padding: 8px 45px;
+  cursor: pointer;
+  background: transparent;
+  backdrop-filter: blur(90px);
+  color: rgb(209, 206, 203);
+  border: 1px solid rgb(112, 111, 111);
+  border-radius: 40px;
+  transition: all 0.4s linear;
+}
+
+.btn2:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 0px gray;
+}
+
+form p{
+  text-align: center;
+  letter-spacing: 0.6px;
+}
+
+form p a {
+  color: rgb(209, 206, 203);
   text-decoration: none;
-  color: #C1BDB3;
+  cursor: pointer;
 }
 
-button{
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 30px;
-  color: #C1BDB3;
-  background-color: #2f2f2f;
+form p a:hover{
+  color: blue;
 }
 
-.resister{
-  color: #C1BDB3;
-  text-decoration: none;
+@media (max-width: 600px){
+  section{
+    width: fit-content;
+  }
+  form{
+    width: 90%;
+  }
+  .name{
+    display: flex;
+    flex-direction: column;
+  }
+  #term{
+    background: transparent;
+    backdrop-filter: blur(30px);
+    color: rgb(209, 206, 203);
+  }
+  .btn2:hover{
+    transform: scale(0.9);
+  }
 }
