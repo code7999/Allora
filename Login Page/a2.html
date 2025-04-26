@@ -3,38 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="s2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login Page</title>
 </head>
 <body>
     <header>
-    <nav>
-        <div class="logo">Logo</div>
-        <div class="navbar">
-            <a href="#" class="a">Home</a>
-            <a href="#" class="a">About</a>
-            <a href="#" class="a">Contact</a>
-            <button>Sign-up</button>
-        </div>
-    </nav>
-    </header>
-    <div class="full">
-        <div class="login-page">
-            <div class="text">Sign-in</div>
-            <div class="option">
-            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <nav>
+            <div class="head">
+
+                <!-- logo -->
+                <div class="logo">Logo</div>
+
+                <!-- Menu toggle -->
+                <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="check">
+
+                <!-- navbar -->
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                    <!-- Button -->
+                    <button class="btn1">Sign-in</button>
+                </ul>
             </div>
-            <form>
-                <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
-                <a href="#" class="forget">Forget Password</a>
-                <button>Sign-in</button>
-                <p>Don't have any account?<a href="#" class="resister">Click</a></p>
+        </nav>
+    </header>
+
+    <!-- Login Page -->
+    <main>
+        <section>
+            <h2>Sign-in</h2>
+
+            <!-- Social icons -->
+            <p class="social">
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </p>
+            <form action="_main">
+
+                <!-- Name -->
+                <div class="name">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+
+                <!-- Number: -->
+                <input type="tel" placeholder="Number" class="ipt" >
+
+                <!-- Create Password -->
+                <input type="password" placeholder="Create Password" class="ipt">
+
+                <!-- Confirm Password -->
+                <input type="password" placeholder="Confirm Password" class="ipt">
+
+                <!-- Tems & Conditions -->
+                <span>
+                    <input type="checkbox" id="term">
+                    <label for="term" class="terms">By creatinng an account I have read all Terms & Conditions</label>
+                </span>
+
+                <!-- Buttons -->
+                <div class="submit">
+                    <button type="reset" class="btn2">Reset</button>
+                    <button type="submit" class="btn2">Submit</button>
+                </div>
+                <p>Do you've account? &nbsp;<a href="#">Sign-in</a></p>
             </form>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
 </html>
